@@ -15,6 +15,7 @@ namespace FOR2B3U_Lokaverkefni
         Random rand1 = new Random();
         List<int> spilari = new List<int>();
         List<int> tolva = new List<int>();
+        private val Val = new val();
 
         public Form1()
         {
@@ -25,6 +26,7 @@ namespace FOR2B3U_Lokaverkefni
         {
             panel1.BackgroundImage = imageList1.Images[rand1.Next(52)];
             panel2.BackgroundImage = imageList1.Images[rand1.Next(52)];
+            Val.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
