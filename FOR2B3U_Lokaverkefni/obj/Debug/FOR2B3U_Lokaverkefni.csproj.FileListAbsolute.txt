@@ -15,8 +15,6 @@ H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.pdb
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\MySql.Data.dll
-H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csprojResolveAssemblyReference.cache
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Form1.resources
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Properties.Resources.resources
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csproj.GenerateResource.Cache
-H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.val.resources

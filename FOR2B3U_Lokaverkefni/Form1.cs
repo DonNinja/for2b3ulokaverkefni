@@ -12,36 +12,61 @@ namespace FOR2B3U_Lokaverkefni
 {
     public partial class Form1 : Form
     {
+        int teljariSpil = 0;
         Random rand1 = new Random();
         List<int> spilari = new List<int>();
         List<int> tolva = new List<int>();
-        private val Val = new val();
+        List<int> stokkur = new List<int>();
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void btDraga_Click(object sender, EventArgs e)
-        {
-            panel1.BackgroundImage = imageList1.Images[rand1.Next(52)];
-            panel2.BackgroundImage = imageList1.Images[rand1.Next(52)];
-            Val.Show();
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            for (int i = 1; i < 53; i++)
+            for (int i = 0; i < 52; i++)
             {
-                if (i % 2 == 0)
+                stokkur.Add(i);
+            }
+
+            while (stokkur.Count > 0)
+            {
+                int randTala = rand1.Next(0, stokkur.Count);
+                if (teljariSpil % 2 == 0)
                 {
-                    spilari.Add(i);
+                    spilari.Add(stokkur[randTala]);
                 }
                 else
                 {
-                    tolva.Add(i);
+                    tolva.Add(stokkur[randTala]);
                 }
+                teljariSpil++;
+                stokkur.Remove(stokkur[randTala]);
             }
+        }
+        int tel = 0;
+        private void btDraga_Click(object sender, EventArgs e)
+        {
+            if (tel == 25)
+            {
+                btDraga.Visible = false;
+            }
+            panel2.BackgroundImage = imageList1.Images[spilari[tel]];
+            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+            panel1.BackgroundImage = imageList1.Images[tolva[tel]];
+            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+            tel++;
+            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+           // string nafnmyndar = imageList1.Images.Keys(spilari[tel]).ToString();
+            rtbVann.Text = myndspilara + "\n";
+            rtbVann.Text += myndtolvu;
+        }
+
+        private void btKilo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
