@@ -17,10 +17,18 @@ namespace FOR2B3U_Lokaverkefni
         List<int> spilari = new List<int>();
         List<int> tolva = new List<int>();
         List<int> stokkur = new List<int>();
-
+        Gagnagrunnur Gagnagrunnur = new Gagnagrunnur();
         public Form1()
         {
             InitializeComponent();
+            try
+            {
+                Gagnagrunnur.TengingVidGagnagrunn();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            } 
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -48,7 +56,7 @@ namespace FOR2B3U_Lokaverkefni
         int tel = 0;
         private void btDraga_Click(object sender, EventArgs e)
         {
-            if (tel == 25)
+            if (tel == spilari.Count)
             {
                 btDraga.Visible = false;
             }

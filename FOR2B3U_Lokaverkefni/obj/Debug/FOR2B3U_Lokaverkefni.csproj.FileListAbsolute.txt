@@ -18,3 +18,12 @@ H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Form1.resources
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Properties.Resources.resources
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csproj.GenerateResource.Cache
+H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe.config
+H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.exe
+H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.pdb
+H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe
+H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.pdb
+H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csprojResolveAssemblyReference.cache
+H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Form1.resources
+H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Properties.Resources.resources
+H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csproj.GenerateResource.Cache

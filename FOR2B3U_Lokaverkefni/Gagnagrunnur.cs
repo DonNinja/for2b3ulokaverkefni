@@ -65,5 +65,29 @@ namespace FOR2B3U_Lokaverkefni
                 throw ex;
             }
         }
+        public List<string> LesautSQLTofluGestir(string flokkur,string mynd)
+        {
+            List<string> faerslur = new List<string>();
+            string lina = null;
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "SELECT "+flokkur+" FROM spil WHERE nafn_myndar ="+mynd;
+                nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                sqllesari = nySQLskipun.ExecuteReader();
+                while (sqllesari.Read())
+                {
+                    for (int i = 0; i < sqllesari.FieldCount; i++)
+                    {
+                        lina += (sqllesari.GetValue(i).ToString()) + ":";
+                    }
+                    faerslur.Add(lina);
+                    lina = null;
+                }
+                CloseConnection();
+
+            }
+            return faerslur;
+
+        }
     }
 }
