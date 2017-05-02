@@ -17,7 +17,9 @@ namespace FOR2B3U_Lokaverkefni
         List<int> spilari = new List<int>();
         List<int> tolva = new List<int>();
         List<int> stokkur = new List<int>();
+        List<int> aukastokkur = new List<int>();
         Gagnagrunnur Gagnagrunnur = new Gagnagrunnur();
+        int tel = 0;
         public Form1()
         {
             InitializeComponent();
@@ -30,7 +32,6 @@ namespace FOR2B3U_Lokaverkefni
                 MessageBox.Show(ex.ToString());
             } 
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             for (int i = 0; i < 52; i++)
@@ -53,28 +54,314 @@ namespace FOR2B3U_Lokaverkefni
                 stokkur.Remove(stokkur[randTala]);
             }
         }
-        int tel = 0;
+        int tel2 = 0;
         private void btDraga_Click(object sender, EventArgs e)
         {
-            if (tel == spilari.Count)
+            
+                 if (spilari.Count - 1 !=0 && tolva.Count - 1 != 0)
             {
-                btDraga.Visible = false;
+                if (tel == spilari.Count - 1)
+                {
+                    btDraga.Visible = false;
+                }
+                panel2.BackgroundImage = imageList1.Images[spilari[tel]];
+                string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+                panel1.BackgroundImage = imageList1.Images[tolva[tel]];
+                string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+
+                myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+                myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+                // string nafnmyndar = imageList1.Images.Keys(spilari[tel]).ToString();
+                rtbVann.Text = myndspilara + "\n";
+                rtbVann.Text += myndtolvu + "\n\n";
+                panel1.Visible = true;
+                tel2++;
+                rtbVann.Text = tel2.ToString();
             }
-            panel2.BackgroundImage = imageList1.Images[spilari[tel]];
-            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
-            panel1.BackgroundImage = imageList1.Images[tolva[tel]];
-            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
-            tel++;
-            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
-            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
-           // string nafnmyndar = imageList1.Images.Keys(spilari[tel]).ToString();
-            rtbVann.Text = myndspilara + "\n";
-            rtbVann.Text += myndtolvu;
+            else
+            {
+                MessageBox.Show("spilið búið");
+            }           
         }
 
         private void btKilo_Click(object sender, EventArgs e)
         {
+            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+            
+            double playerUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("kilothyngd", myndspilara));
+            double tolvaUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("kilothyngd", myndtolvu));
 
+            rtbVann.Text = playerUt + "\n";
+            rtbVann.Text += tolvaUt + "\n\n";
+
+            if (playerUt > tolvaUt)
+            {
+                rtbVann.Text += "Þú vannst þessa lotu";
+                spilari.Add(tolva[tel]);
+                tolva.Remove(tolva[tel]);
+            }
+            else if (playerUt < tolvaUt)
+            {
+                rtbVann.Text += "tölvan vann þessa lotu";
+                tolva.Add(spilari[tel]);
+                spilari.Remove(spilari[tel]);
+            }
+            else
+            {
+                rtbVann.Text += "það var jafntefli";
+                aukastokkur.Add(tolva[tel]);
+                aukastokkur.Add(spilari[tel]);
+            }
+            panel1.Visible = true;
+            tel++;
+        }
+
+        private void btMjolk_Click(object sender, EventArgs e)
+        {
+            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+
+            double playerUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("mjolkurlagni", myndspilara));
+            double tolvaUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("mjolkurlagni", myndtolvu));
+
+            rtbVann.Text = playerUt + "\n";
+            rtbVann.Text += tolvaUt + "\n\n";
+
+            if (playerUt > tolvaUt)
+            {
+                rtbVann.Text += "Þú vannst þessa lotu";
+                spilari.Add(tolva[tel]);
+                tolva.Remove(tolva[tel]);
+            }
+            else if (playerUt < tolvaUt)
+            {
+                rtbVann.Text += "tölvan vann þessa lotu";
+                tolva.Add(spilari[tel]);
+                spilari.Remove(spilari[tel]);
+            }
+            else
+            {
+                rtbVann.Text += "það var jafntefli";
+                aukastokkur.Add(tolva[tel]);
+                aukastokkur.Add(spilari[tel]);
+            }
+            panel1.Visible = true;
+            tel++;
+        }
+
+        private void btUll_Click(object sender, EventArgs e)
+        {
+            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+
+            double playerUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("ullareinkunn", myndspilara));
+            double tolvaUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("ullareinkunn", myndtolvu));
+
+            rtbVann.Text = playerUt + "\n";
+            rtbVann.Text += tolvaUt + "\n\n";
+
+            if (playerUt > tolvaUt)
+            {
+                rtbVann.Text += "Þú vannst þessa lotu";
+                spilari.Add(tolva[tel]);
+                tolva.Remove(tolva[tel]);
+            }
+            else if (playerUt < tolvaUt)
+            {
+                rtbVann.Text += "tölvan vann þessa lotu";
+                tolva.Add(spilari[tel]);
+                spilari.Remove(spilari[tel]);
+            }
+            else
+            {
+                rtbVann.Text += "það var jafntefli";
+                aukastokkur.Add(tolva[tel]);
+                aukastokkur.Add(spilari[tel]);
+            }
+            panel1.Visible = true;
+            tel++;
+        }
+
+        private void btBorn_Click(object sender, EventArgs e)
+        {
+            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+
+            double playerUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("fjoldibarna", myndspilara));
+            double tolvaUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("fjoldibarna", myndtolvu));
+
+            rtbVann.Text = playerUt + "\n";
+            rtbVann.Text += tolvaUt + "\n\n";
+
+            if (playerUt > tolvaUt)
+            {
+                rtbVann.Text += "Þú vannst þessa lotu";
+                spilari.Add(tolva[tel]);
+                tolva.Remove(tolva[tel]);
+            }
+            else if (playerUt < tolvaUt)
+            {
+                rtbVann.Text += "tölvan vann þessa lotu";
+                tolva.Add(spilari[tel]);
+                spilari.Remove(spilari[tel]);
+            }
+            else
+            {
+                rtbVann.Text += "það var jafntefli";
+                aukastokkur.Add(tolva[tel]);
+                aukastokkur.Add(spilari[tel]);
+            }
+            panel1.Visible = true;
+            tel++;
+        }
+
+        private void btLaeri_Click(object sender, EventArgs e)
+        {
+            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+
+            double playerUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("einkunnlaeris", myndspilara));
+            double tolvaUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("einkunnlaeris", myndtolvu));
+
+            rtbVann.Text = playerUt + "\n";
+            rtbVann.Text += tolvaUt + "\n\n";
+
+            if (playerUt > tolvaUt)
+            {
+                rtbVann.Text += "Þú vannst þessa lotu";
+                spilari.Add(tolva[tel]);
+                tolva.Remove(tolva[tel]);
+            }
+            else if (playerUt < tolvaUt)
+            {
+                rtbVann.Text += "tölvan vann þessa lotu";
+                tolva.Add(spilari[tel]);
+                spilari.Remove(spilari[tel]);
+            }
+            else
+            {
+                rtbVann.Text += "það var jafntefli";
+                aukastokkur.Add(tolva[tel]);
+                aukastokkur.Add(spilari[tel]);
+            }
+            panel1.Visible = true;
+            tel++;
+        }
+
+        private void btFrjo_Click(object sender, EventArgs e)
+        {
+            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+
+            double playerUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("frjosemi", myndspilara));
+            double tolvaUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("frjosemi", myndtolvu));
+
+            rtbVann.Text = playerUt + "\n";
+            rtbVann.Text += tolvaUt + "\n\n";
+
+            if (playerUt > tolvaUt)
+            {
+                rtbVann.Text += "Þú vannst þessa lotu";
+                spilari.Add(tolva[tel]);
+                tolva.Remove(tolva[tel]);
+            }
+            else if (playerUt < tolvaUt)
+            {
+                rtbVann.Text += "tölvan vann þessa lotu";
+                tolva.Add(spilari[tel]);
+                spilari.Remove(spilari[tel]);
+            }
+            else
+            {
+                rtbVann.Text += "það var jafntefli";
+                aukastokkur.Add(tolva[tel]);
+                aukastokkur.Add(spilari[tel]);
+            }
+            panel1.Visible = true;
+            tel++;
+        }
+
+        private void btBak_Click(object sender, EventArgs e)
+        {
+            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+
+            double playerUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("bakvodvi", myndspilara));
+            double tolvaUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("bakvodvi", myndtolvu));
+
+            rtbVann.Text = playerUt + "\n";
+            rtbVann.Text += tolvaUt + "\n\n";
+
+            if (playerUt > tolvaUt)
+            {
+                rtbVann.Text += "Þú vannst þessa lotu";
+                spilari.Add(tolva[tel]);
+                tolva.Remove(tolva[tel]);
+            }
+            else if (playerUt < tolvaUt)
+            {
+                rtbVann.Text += "tölvan vann þessa lotu";
+                tolva.Add(spilari[tel]);
+                spilari.Remove(spilari[tel]);
+            }
+            else
+            {
+                rtbVann.Text += "það var jafntefli";
+                aukastokkur.Add(tolva[tel]);
+                aukastokkur.Add(spilari[tel]);
+            }
+            panel1.Visible = true;
+            tel++;
+        }
+
+        private void btMal_Click(object sender, EventArgs e)
+        {
+            string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
+            string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
+            myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
+            myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
+
+            double playerUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("malireinkun", myndspilara));
+            double tolvaUt = Convert.ToDouble(Gagnagrunnur.LesautSQLToflu("malireinkun", myndtolvu));
+
+            rtbVann.Text = playerUt + "\n";
+            rtbVann.Text += tolvaUt + "\n\n";
+
+            if (playerUt > tolvaUt)
+            {
+                rtbVann.Text += "Þú vannst þessa lotu";
+                spilari.Add(tolva[tel]);
+                tolva.Remove(tolva[tel]);
+            }
+            else if (playerUt < tolvaUt)
+            {
+                rtbVann.Text += "tölvan vann þessa lotu";
+                tolva.Add(spilari[tel]);
+                spilari.Remove(spilari[tel]);
+            }
+            else
+            {
+                rtbVann.Text += "það var jafntefli";
+                aukastokkur.Add(tolva[tel]);
+                aukastokkur.Add(spilari[tel]);
+            }
+            panel1.Visible = true;
+            tel++;
         }
     }
 }

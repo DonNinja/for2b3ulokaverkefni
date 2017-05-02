@@ -139,6 +139,7 @@
             this.btMal.TabIndex = 22;
             this.btMal.Text = "Malir einkun";
             this.btMal.UseVisualStyleBackColor = true;
+            this.btMal.Click += new System.EventHandler(this.btMal_Click);
             // 
             // btBak
             // 
@@ -151,6 +152,7 @@
             this.btBak.TabIndex = 21;
             this.btBak.Text = "Bakvöðvi";
             this.btBak.UseVisualStyleBackColor = true;
+            this.btBak.Click += new System.EventHandler(this.btBak_Click);
             // 
             // btFrjo
             // 
@@ -163,6 +165,7 @@
             this.btFrjo.TabIndex = 20;
             this.btFrjo.Text = "Frjósemi";
             this.btFrjo.UseVisualStyleBackColor = true;
+            this.btFrjo.Click += new System.EventHandler(this.btFrjo_Click);
             // 
             // btLaeri
             // 
@@ -175,6 +178,7 @@
             this.btLaeri.TabIndex = 19;
             this.btLaeri.Text = "Einkunn læris";
             this.btLaeri.UseVisualStyleBackColor = true;
+            this.btLaeri.Click += new System.EventHandler(this.btLaeri_Click);
             // 
             // btBorn
             // 
@@ -187,6 +191,7 @@
             this.btBorn.TabIndex = 18;
             this.btBorn.Text = "Fjöldi barna";
             this.btBorn.UseVisualStyleBackColor = true;
+            this.btBorn.Click += new System.EventHandler(this.btBorn_Click);
             // 
             // btUll
             // 
@@ -199,6 +204,7 @@
             this.btUll.TabIndex = 17;
             this.btUll.Text = "Ullar einkun";
             this.btUll.UseVisualStyleBackColor = true;
+            this.btUll.Click += new System.EventHandler(this.btUll_Click);
             // 
             // btMjolk
             // 
@@ -211,6 +217,7 @@
             this.btMjolk.TabIndex = 16;
             this.btMjolk.Text = "Mjólkur lagni";
             this.btMjolk.UseVisualStyleBackColor = true;
+            this.btMjolk.Click += new System.EventHandler(this.btMjolk_Click);
             // 
             // btKilo
             // 
