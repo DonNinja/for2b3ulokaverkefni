@@ -59,6 +59,7 @@ namespace FOR2B3U_Lokaverkefni
         {
             
                  if (spilari.Count - 1 !=0 && tolva.Count - 1 != 0)
+
             {
                 if (tel == spilari.Count - 1)
                 {
