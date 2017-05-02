@@ -48,7 +48,7 @@ namespace FOR2B3U_Lokaverkefni
         int tel = 0;
         private void btDraga_Click(object sender, EventArgs e)
         {
-            if (tel == 25)
+            if (tel == spilari.Count - 1)
             {
                 btDraga.Visible = false;
             }
@@ -61,12 +61,13 @@ namespace FOR2B3U_Lokaverkefni
             myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
            // string nafnmyndar = imageList1.Images.Keys(spilari[tel]).ToString();
             rtbVann.Text = myndspilara + "\n";
-            rtbVann.Text += myndtolvu;
+            rtbVann.Text += myndtolvu + "\n";
+            //panel1.Visible = false;
         }
-
+        
         private void btKilo_Click(object sender, EventArgs e)
         {
-
+            //panel1.Visible = true;
         }
     }
 }

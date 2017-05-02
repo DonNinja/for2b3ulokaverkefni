@@ -43,6 +43,8 @@
             this.btMjolk = new System.Windows.Forms.Button();
             this.btKilo = new System.Windows.Forms.Button();
             this.rtbVann = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btDraga
@@ -233,11 +235,33 @@
             this.rtbVann.TabIndex = 23;
             this.rtbVann.Text = "";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.Location = new System.Drawing.Point(688, 502);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 31);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Spilari";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label2.Location = new System.Drawing.Point(200, 502);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 31);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Tölva";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(967, 613);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.rtbVann);
             this.Controls.Add(this.btMal);
             this.Controls.Add(this.btBak);
@@ -254,6 +278,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -272,6 +297,8 @@
         private System.Windows.Forms.Button btMjolk;
         private System.Windows.Forms.Button btKilo;
         private System.Windows.Forms.RichTextBox rtbVann;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
