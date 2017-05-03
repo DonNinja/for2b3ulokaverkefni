@@ -57,11 +57,19 @@ namespace FOR2B3U_Lokaverkefni
         int tel2 = 0;
         private void btDraga_Click(object sender, EventArgs e)
         {
+            if (tel >= spilari.Count)
+            {
+                tel = 0;
+            }
+            else if (tel2 >= tolva.Count)
+            {
+                tel2 = 0;
+            }
             
                  if (spilari.Count - 1 !=0 && tolva.Count - 1 != 0)
 
             {
-                if (tel == spilari.Count - 1)
+                if (tel == spilari.Count - 1 && tel2 == tolva.Count - 1)
                 {
                     btDraga.Visible = false;
                 }
@@ -75,18 +83,29 @@ namespace FOR2B3U_Lokaverkefni
                 // string nafnmyndar = imageList1.Images.Keys(spilari[tel]).ToString();
                 rtbVann.Text = myndspilara + "\n";
                 rtbVann.Text += myndtolvu + "\n\n";
-                panel1.Visible = true;
-                tel2++;
-                rtbVann.Text = tel2.ToString();
+                panel1.Visible = false;
+
+                rtbVann.Text += "veldu flokk sem þú vilt keppa í";
+                
+
             }
             else
             {
+                if (spilari.Count > tolva.Count)
+                {
+                    MessageBox.Show("Húrra!!! Þú vanst");
+                }
+                else
+                {
+                    MessageBox.Show("Awwwwwww Þú tapaðir");
+                }
                 MessageBox.Show("spilið búið");
             }           
         }
 
         private void btKilo_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
             string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
             myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
@@ -118,10 +137,12 @@ namespace FOR2B3U_Lokaverkefni
             }
             panel1.Visible = true;
             tel++;
+            tel2++;
         }
 
         private void btMjolk_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
             string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
             myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
@@ -153,10 +174,12 @@ namespace FOR2B3U_Lokaverkefni
             }
             panel1.Visible = true;
             tel++;
+            tel2++;
         }
 
         private void btUll_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
             string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
             myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
@@ -188,10 +211,12 @@ namespace FOR2B3U_Lokaverkefni
             }
             panel1.Visible = true;
             tel++;
+            tel2++;
         }
 
         private void btBorn_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
             string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
             myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
@@ -223,10 +248,12 @@ namespace FOR2B3U_Lokaverkefni
             }
             panel1.Visible = true;
             tel++;
+            tel2++;
         }
 
         private void btLaeri_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
             string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
             myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
@@ -258,10 +285,12 @@ namespace FOR2B3U_Lokaverkefni
             }
             panel1.Visible = true;
             tel++;
+            tel2++;
         }
 
         private void btFrjo_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
             string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
             myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
@@ -293,10 +322,12 @@ namespace FOR2B3U_Lokaverkefni
             }
             panel1.Visible = true;
             tel++;
+            tel2++;
         }
 
         private void btBak_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
             string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
             myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
@@ -328,10 +359,12 @@ namespace FOR2B3U_Lokaverkefni
             }
             panel1.Visible = true;
             tel++;
+            tel2++;
         }
 
         private void btMal_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             string myndspilara = imageList1.Images.Keys[spilari[tel]].ToString();
             string myndtolvu = imageList1.Images.Keys[tolva[tel]].ToString();
             myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
@@ -363,6 +396,7 @@ namespace FOR2B3U_Lokaverkefni
             }
             panel1.Visible = true;
             tel++;
+            tel2++;
         }
     }
 }
