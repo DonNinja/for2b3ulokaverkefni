@@ -86,14 +86,12 @@ namespace FOR2B3U_Lokaverkefni
                 panel1.Visible = false;
 
                 rtbVann.Text += "veldu flokk sem þú vilt keppa í";
-                
-
             }
             else
             {
                 if (spilari.Count > tolva.Count)
                 {
-                    MessageBox.Show("Húrra!!! Þú vanst");
+                    MessageBox.Show("Húrra!!! Þú vannst");
                 }
                 else
                 {
