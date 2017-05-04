@@ -1,33 +1,9 @@
-c:\users\2605993489\documents\visual studio 2013\Projects\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe.config
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe.config
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.pdb
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\MySql.Data.dll
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csprojResolveAssemblyReference.cache
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Form1.resources
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Properties.Resources.resources
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csproj.GenerateResource.Cache
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.exe
-H:\Visual Studio 2013\Projects\FOR2B3U\FOR2B3U_Lokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.pdb
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe.config
-H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.exe
-H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.pdb
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.pdb
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\MySql.Data.dll
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Form1.resources
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Properties.Resources.resources
 H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csproj.GenerateResource.Cache
-<<<<<<< HEAD
-H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe.config
-H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.exe
-H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.pdb
-H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.exe
-H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\bin\Debug\FOR2B3U_Lokaverkefni.pdb
-H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csprojResolveAssemblyReference.cache
-H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Form1.resources
-H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.Properties.Resources.resources
-H:\veforritun\hópaverkefni\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csproj.GenerateResource.Cache
-=======
-H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.csprojResolveAssemblyReference.cache
->>>>>>> c667dc2e7acc677a210d9e29422883ab4f4a1fee
+H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.exe
+H:\Visual Studio 2013\Projects\FOR2B3U\for2b3ulokaverkefni\FOR2B3U_Lokaverkefni\obj\Debug\FOR2B3U_Lokaverkefni.pdb

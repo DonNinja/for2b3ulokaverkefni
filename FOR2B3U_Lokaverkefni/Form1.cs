@@ -57,6 +57,7 @@ namespace FOR2B3U_Lokaverkefni
         int tel2 = 0;
         private void btDraga_Click(object sender, EventArgs e)
         {
+            rtbVann.Clear();
             if (tel >= spilari.Count)
             {
                 tel = 0;
@@ -81,11 +82,11 @@ namespace FOR2B3U_Lokaverkefni
                 myndspilara = myndspilara.Substring(0, (myndspilara.Length - 4));
                 myndtolvu = myndtolvu.Substring(0, (myndtolvu.Length - 4));
                 // string nafnmyndar = imageList1.Images.Keys(spilari[tel]).ToString();
-                rtbVann.Text = myndspilara + "\n";
-                rtbVann.Text += myndtolvu + "\n\n";
+               // rtbVann.Text = myndspilara + "\n";
+               // rtbVann.Text += myndtolvu + "\n\n";
                 panel1.Visible = false;
 
-                rtbVann.Text += "veldu flokk sem þú vilt keppa í";
+                rtbVann.Text += "veldu flokkinn sem þú vilt keppa í";
             }
             else
             {
